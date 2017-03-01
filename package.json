@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "redis store for egg session",
   "eggPlugin": {
-    "name": "session-redis",
+    "name": "sessionRedis",
     "dependencies": [
       "redis"
     ]
@@ -11,7 +11,9 @@
   "keywords": [
     "egg",
     "eggPlugin",
-    "egg-plugin"
+    "egg-plugin",
+    "session",
+    "redis"
   ],
   "dependencies": {
 
@@ -62,15 +64,5 @@
   },
   "homepage": "https://github.com/eggjs/egg-session-redis#readme",
   "author": "dead-horse",
-  "license": "MIT",
-  "boilerplate": {
-    "name": "egg-boilerplate-plugin",
-    "version": "1.7.0",
-    "description": "boilerplate for egg plugin",
-    "repository": {
-      "type": "git",
-      "url": "git@github.com:eggjs/egg-boilerplate-plugin.git"
-    },
-    "homepage": "https://github.com/eggjs/egg-boilerplate-plugin"
-  }
+  "license": "MIT"
 }
