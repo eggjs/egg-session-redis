@@ -22,5 +22,4 @@ module.exports = {
     './docs',
     './coverage',
   ],
-  registry: 'https://r.cnpmjs.org',
 };
