@@ -48,6 +48,20 @@ exports.redis = {
 
 ## Configuration
 
+If we only have one redis instance:
+
+```js
+// {app_root}/config/config.default.js
+
+exports.redis = {
+  host: 'your redis host',
+  port: 'your redis port',
+  /* other redis config */
+};
+
+// no need to set any sessionRedis config
+```
+
 If we have more than one redis instance, we need to configure which instance to be used as session store.
 
 ```js
@@ -61,7 +75,7 @@ exports.redis = {
 };
 
 exports.sessionRedis = {
-  name: 'session', // specific `session` as the session store
+  name: 'session', // specific instance `session` as the session store
 };
 ```
 
