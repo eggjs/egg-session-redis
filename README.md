@@ -52,13 +52,15 @@ If we only have one redis instance:
 
 ```js
 // {app_root}/config/config.default.js
-
 exports.redis = {
-  host: 'your redis host',
-  port: 'your redis port',
-  /* other redis config */
+  client: {
+    host: 'your redis host',
+    port: 'your redis port',
+    password: '',
+    db: '0',
+  },
+  agent:true
 };
-
 // no need to set any sessionRedis config
 ```
 
