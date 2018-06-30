@@ -1,6 +1,6 @@
 {
   "name": "egg-session-redis",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "redis store for egg session",
   "eggPlugin": {
     "name": "sessionRedis",
@@ -15,9 +15,7 @@
     "session",
     "redis"
   ],
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "autod": "^3.0.1",
     "egg": "^2.9.1",
