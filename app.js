@@ -10,20 +10,20 @@ module.exports = app => {
   assert(redis, `redis instance [${name}] not exists`);
 
   app.sessionStore = {
-    * get(key) {
-      const res = yield redis.get(key);
+    async get(key) {
+      const res = await redis.get(key);
       if (!res) return null;
       return JSON.parse(res);
     },
 
-    * set(key, value, maxAge) {
+    async set(key, value, maxAge) {
       maxAge = maxAge || ONE_DAY;
       value = JSON.stringify(value);
-      yield redis.set(key, value, 'PX', maxAge);
+      await redis.set(key, value, 'PX', maxAge);
     },
 
-    * destroy(key) {
-      yield redis.del(key);
+    async destroy(key) {
+      await redis.del(key);
     },
   };
 };
