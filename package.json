@@ -40,8 +40,10 @@
     "ci": "npm run lint && npm run cov",
     "autod": "autod"
   },
+  "types": "index.d.ts",
   "files": [
     "index.js",
+    "index.d.ts",
     "app.js",
     "agent.js",
     "config",
