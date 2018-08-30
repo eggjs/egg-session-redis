@@ -1,4 +1,10 @@
 
+2.0.1 / 2018-08-23
+==================
+
+**fixes**
+  * [[`9e87f65`](http://github.com/eggjs/egg-session-redis/commit/9e87f6571f8e15d716fed2c443002b77179191d4)] - fix: fix maxage=session error (#7) (章 <<403724532@qq.com>>)
+
 2.0.0 / 2018-07-01
 ==================
 
