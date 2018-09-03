@@ -5,7 +5,7 @@ declare module 'egg' {
     }
   }
 
-  export interface Application {j
+  export interface Application {
     /**
      * @member Application#sessionStore
      * @property {Function<string>} get - get redis session store
@@ -20,7 +20,7 @@ declare module 'egg' {
      */
     sessionStore: {
       get: (key: string) => Promise<any>;
-      set: (key: string, value: any, maxAge?: number) => Promise<void>;
+      set: (key: string, value: any, maxAge?: number | string) => Promise<void>;
       destroy: (key: string) => Promise<void>;
     };
   }
