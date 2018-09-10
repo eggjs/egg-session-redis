@@ -1,4 +1,10 @@
 
+2.1.0 / 2018-09-10
+==================
+
+**features**
+  * [[`51b1de3`](http://github.com/eggjs/egg-session-redis/commit/51b1de3eba07ac6fd18f5e4a7d56647365550b3b)] - feat: add typescript support (#6) (songyazhao <<59256790@qq.com>>)
+
 2.0.1 / 2018-08-23
 ==================
 
