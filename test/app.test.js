@@ -2,14 +2,22 @@
 
 const sleep = require('mz-modules/sleep');
 const request = require('supertest');
+const runscript = require('runscript');
 const assert = require('assert');
 const mm = require('egg-mock');
+const path = require('path');
+const tsBaseDir = path.join(__dirname, './fixtures/ts');
 
 describe('app.test.js', () => {
+  // add typescript tsc
+  before(async () => {
+    await runscript(`tsc -p ${tsBaseDir}/tsconfig.json`, { cwd: tsBaseDir });
+  });
 
   [
     'single',
     'multi',
+    'ts',
   ].forEach(name => {
     describe(name, () => {
       let app;
